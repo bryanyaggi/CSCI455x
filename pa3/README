@@ -1,0 +1,54 @@
+Name: Bryan Yaggi
+USC Login ID: yaggi
+CSCI 455, PA3
+Fall 2016
+
+SEE pa3.pdf FOR ASSIGNMENT DETAILS
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement: BY
+
+
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+Maze file error checking is implemented in MazeViewer. IOExceptions are thrown
+to indicate invalid data in the file. Ideally, a specific exception subclass
+would be defined so the user can easily tell what is causing the exception.
+This was not done because the exception subclass would have to be defined in a
+separate file and would not be submitted.
+
+In Maze, the search method creates a padded 2D byte array for finding a path.
+The byte data type was used because it requires less memory than char and can
+store more than 2 values, unlike boolean. In addition to walls and free spaces,
+a third value is used to indicate if a maze location has been visited. Maze
+also has a 2D boolean array instance variable containing the maze data used in
+the constructor.
+
+MazeComponent uses Line2D for drawing lines of the path. This is done so that the
+lines will still between the centers of each maze space/box even if the space
+width and height are defined to be odd numbers.
